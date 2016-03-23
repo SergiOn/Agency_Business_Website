@@ -1,0 +1,729 @@
+/* *** *****   section #thenav   ***** *** */
+/* ***  for mobile menu ***  */
+#thenav label {
+	float: right;
+	width: 70px;
+	margin-top: 25px;
+	margin-right: 10px;
+	padding: 30px 12px;
+	cursor: pointer;
+	border: 1px solid #f0f2f4;
+}
+#thenav label span {
+	display: block;
+	width: 100%;
+	height: 8px;
+	margin: 0 auto;
+	background-color: #424242;
+	transition: transform .55s linear;
+}
+#thenav label span:before,
+#thenav label span:after,
+#thenav label span::before,
+#thenav label span::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 8px;
+	margin: 0 auto;
+	background-color: #424242;
+	transition: transform .55s linear, width .55s linear;
+}
+#thenav label span:before,
+#thenav label span::before {
+	transform: translate(0, -16px);
+}
+#thenav label span:after,
+#thenav label span::after {
+	transform: translate(0, 8px);
+}
+#formenu:checked ~ nav {
+	height: 225px;
+	opacity: 1;
+}
+#formenu:checked ~  label span {
+	background-color: transparent;
+	transform: rotate(-180deg);
+}
+#formenu:checked ~  label span:before,
+#formenu:checked ~  label span::before {
+	width: 70%;
+	transform: rotate(135deg);
+}
+#formenu:checked ~  label span:after,
+#formenu:checked ~  label span::after {
+	width: 70%;
+	transform: translate(0, -8px) rotate(-135deg);
+}
+/* ***  end for mobile menu *** */
+/* ***  JS style for JS for fixed menu *** */
+#thenav.fixedmob {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 42px;
+	border-bottom: 1px solid rgba(66,66,66,0.4);
+	background-color: rgba(255, 255, 255, 0.9);
+	opacity: 1;
+	z-index: 1;	
+}
+#thenav.fixedmob .logo {
+	margin-top: 0px;
+}
+#thenav.fixedmob .logo i {
+	font-size: 37px;
+}
+#thenav.fixedmob .logo h2 {
+	font-size: 25px;
+	line-height: 0.7;
+	margin-top: 2px;
+}
+#thenav.fixedmob .logo h2 span {
+	font-size: 13px;
+}
+#thenav.fixedmob nav {
+	margin-top: 11px;
+}
+
+#thenav .nohover:hover {
+	color: inherit;
+}
+#thenav .key:hover {
+	color: #fff;
+}
+/* ***  end JS style for JS for fixed menu *** */
+/* *** *****   end section #thenav   ***** *** */
+
+
+
+
+
+/* *** *****   @Media Queries Mobile & Tablet   ***** *** */
+
+/*---    *****     Mobile     *****    ---*/
+@media screen and (max-width: 385px) {
+/* *** *****   header   ***** *** */
+	header .flot-r {
+		float: none;
+		width: 304px;
+		margin: 0 auto;
+	}
+	header .separator {
+		margin-right: 12px;
+		margin-left: 11px;
+	}
+	/* *** *****   end header   ***** *** */
+
+/* *** *****   section #thenav   ***** *** */
+	#thenav {
+		height: 120px;
+	}
+	/* ***  logo  *** */
+	#thenav .logo i {
+		float: none;
+		margin-left: 35px;
+	}
+	#thenav .logo h2 {
+		float: none;
+		line-height: .9;
+	}
+	/* ***  end logo  *** */
+	/* ***  nav, create mobile menu *** */
+	#thenav nav {
+		top: 120px;
+	}
+	/* ***  end nav, end create mobile menu  *** */
+	/* *** *****   end section #thenav   ***** *** */
+
+/* *** *****   section #block1   ***** *** */
+	#block1 h1 span {
+		padding: 0 5px;
+	}
+	#block1 a {
+		margin-top: 20px;			/* 35px */
+	}
+	/* *** *****   end section #block1   ***** *** */
+
+/* *** *****   section #block5   ***** *** */
+	#block5 form {
+		width: 97%;				/* 683px*100%/768px */
+	}
+	#block5 form input[type="reset"] {
+		top: -27px;
+		right: -4px;
+	}
+	/* *** *****   end section #block5   ***** *** */
+
+/* *** *****   footer   ***** *** */
+	footer p {
+		padding: 23px 20px 0;
+	}
+	/* *** *****   end footer   ***** *** */
+}
+/* ***  end @media screen and (max-width: 385px)  *** */
+
+
+@media screen and (min-width: 386px) and (max-width: 767px) {
+/* *** *****   header   ***** *** */
+	header .flot-r {
+		margin-right: 10px;
+	}
+	/* *** *****   end header   ***** *** */
+
+/* *** *****   section #thenav   ***** *** */
+	#thenav {
+		height: 70px;
+	}
+	/* for mobile menu*/
+		#thenav label {
+		margin-top: 5px;
+		padding: 25px 12px;
+	}
+	/* end for mobile menu */
+	/* ***  nav, create mobile menu *** */
+	#thenav nav {
+		top: 70px;
+	}
+	/* ***  end nav, end create mobile menu  *** */
+	/* *** *****   end section #thenav   ***** *** */
+
+/* *** *****   section #block4   ***** *** */
+	#block4 .backgr {
+		max-width: 430px;
+	}
+	#block4 .pr,
+	#block4 img {
+		max-width: 215px;
+	}
+	/* *** *****   end section #block4   ***** *** */
+
+/* *** *****   section #block5   ***** *** */
+	#block5 form {
+		width: 88.9%;				/* 683px*100%/768px */
+	}
+	/* *** *****   end section #block5   ***** *** */
+}
+/*---    *****     end Mobile     *****    ---*/
+/* ****  end @media (min-width: 386px) and (max-width: 767px)  *** */
+
+
+@media screen and (max-width: 767px) {
+/* *** *****   header   ***** *** */
+	header {
+		height: 35px;
+	}
+	header .tell i {
+		margin-top: 6px;
+	}
+	header .separator {
+		height: 35px;
+	}
+	header .mail i {
+		margin-top: 8px;
+	}
+	header .text {
+		margin-top: 12px;
+	}
+	header .fb {
+		margin-top: 5px;
+	}
+	/* *** *****   end header   ***** *** */
+
+/* *** *****   section #thenav   ***** *** */
+	#thenav {
+		position: relative;
+	}
+	/* for mobile menu*/
+	#thenav label {
+		display: block;
+	}
+	/* end for mobile menu */
+	/* ***  logo  *** */
+	#thenav .logo {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	#thenav .logo i {
+		font-size: 52px;	/* 57*0.9 */
+	}
+	#thenav .logo h2 {
+		font-size: 34px;	/* 37*0.9 */
+	}
+	#thenav .logo h2 span {
+		font-size: 14px;	/* 15*0.9 */
+	}
+	/* ***  end logo  *** */
+	/* ***  nav, create mobile menu *** */
+	#thenav nav {
+		position: absolute;
+		left: 0;
+		float: none;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+		opacity: .5;
+		margin-top: 0px;
+		background-color: transparent;
+		transition: height .55s linear, opacity .55s linear;
+	}
+	#thenav ul {
+		border-top: 2px solid #e2e2e2;
+		border-bottom: 2px solid #e2e2e2;
+		background-color: #fff;
+	}
+	#thenav li {
+		float: none;
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#thenav li.last {
+		border-top: 2px solid #e2e2e2;
+	}
+	#thenav li:nth-of-type(2),
+	#thenav li:nth-of-type(4),
+	#thenav li:nth-of-type(6) {
+		padding: 0;
+	}
+	#thenav nav a {
+		display: block;
+		text-align: center;
+	}
+	#thenav .round1,
+	#thenav .round2,
+	#thenav .round3 {
+		width: 100%;
+		height: 2px;
+		margin: 0 auto;
+		background-color: #e2e2e2;
+		border-radius: 2px;
+	}
+	#thenav .last {
+		margin-left: auto;
+		text-align: center;
+	}
+	#thenav .key {
+		display: inline-block;
+	}
+	/* ***  end nav, end create mobile menu  *** */
+	/* *** *****   end section #thenav   ***** *** */
+
+/* *** *****   section #block1   ***** *** */
+	#block1 {
+		height: 295px;				/* 590*0.5 */
+		background-position: 0% 100%;
+	}
+	#block1 h1 {
+		font-size: 43px;			/* 48*0.9 */
+		line-height: 1;				/**43px*/
+		padding-top: 60px;			/* 169px */
+		letter-spacing: 0;
+	}
+	#block1 h1 span {
+		font-size: 26px;			/* 30*0.9 */
+		line-height: 1;				/*30px*/
+	}
+	#block1 a {
+		font-size: 21px;			/* 24*0.9 */
+		line-height: 2.38;			/**50px / *21px*/
+		width: 260px;				/* 330px */
+		height: 50px;				/* 67px */
+	}
+	/* *** *****   end section #block1   ***** *** */
+
+/* *** *****   section #block2   ***** *** */
+	#block2 {
+		height: auto;
+	}
+	#block2 h2 {
+		font-size: 32px;			/* 36*0.9 */
+		padding-top: 30px;
+	}
+	#block2 h2 span {
+		font-size: 18px;			/* 20*0.9 */
+	}
+	#block2 .border {
+		margin: 15px auto 20px;
+	}
+	#block2 .column1,
+	#block2 .column2,
+	#block2 .column3 {
+		display: block;
+		width: 100%;
+		margin: 0 auto 20px;
+		padding: 0;
+	}
+	#block2 .column1 img,
+	#block2 .column2 img,
+	#block2 .column3 img {
+		width: auto;
+		height: 30px;
+		margin: 0;
+		vertical-align: middle;
+	}
+	#block2 h3 {
+		display: inline-block;
+		font-size: 20px;			/* 22*0.9 */
+		margin: 0 0 0 10px;
+		padding: 0;
+		vertical-align: middle;
+	}
+	#block2 p {
+		width: 98%;
+		margin: 8px auto 0;
+	}
+	/* *** *****   end section #block2   ***** *** */
+
+/* *** *****   section #block3   ***** *** */
+	#block3 {
+		height: auto;
+	}
+	#block3 h2 {
+		font-size: 32px;			/* 36*0.9 */
+		padding-top: 30px;
+	}
+	#block3 h2 span {
+		font-size: 18px;			/* 20*0.9 */
+		margin: 0 14px;
+	}
+	#block3 .border {
+		margin: 15px auto 40px;
+	}
+	/* ***  .step  *** */
+	#block3 .step {
+		min-height: 1px;
+		background-image: none;
+	}
+	#block3 .step2,
+	#block3 .step4 {
+		text-align: left;
+	}
+	/* ***  end .step  *** */
+	/* ***  .stnumb  *** */
+	#block3 .step .stnumb {
+		font-size: 30px;			/* ~ */
+		line-height: 1;
+		position: absolute;
+		top: 0;
+		left: 20px;
+		width: 70px;
+		height: 50px;
+		transform: none;
+	}
+	#block3 .step3 .stnumb,
+	#block3 .step4 .stnumb {
+		line-height: .8;
+	}
+	#block3 .step1 span,
+	#block3 .step2 span {
+		font-size: 16px;			/* ~ */
+		margin-top: 2px;
+	}
+	#block3 .step3 span,
+	#block3 .step4 span {
+		font-size: 16px;			/* ~ */
+		margin-top: 9px;
+	}
+	/* ***  end .stnumb  *** */
+	#block3 .step h4 {
+		margin-left: 110px;
+		margin-right: 8px;
+		padding-top: 20px;			/* ~ */
+	}
+	#block3 .step p {
+		margin: 12px 0 8px;
+		margin-left: 20px;
+		margin-right: 8px;
+	}
+	/* *** *****   end section #block3   ***** *** */
+
+/* *** *****   section #block4   ***** *** */
+	#block4 {
+		min-height: 1px;
+	}
+	#block4 h2 {
+		font-size: 32px;			/* 36*0.9 */
+		padding-top: 30px;
+	}
+	#block4 h2 span {
+		font-size: 18px;			/* 20*0.9 */
+		margin: 0 14px;
+	}
+	#block4 .border {
+		margin: 15px auto 40px;
+	}
+	#block4 .pr,
+	#block4 img {
+		width: 50%;
+		height: auto;
+	}
+	#block4 .pr i {
+		font-size: 32px;			/* 36*0.9 */
+		margin-top: 30px;
+	}
+	#block4 .pr .bl4text {
+		margin-top: 10px;
+	}
+	#block4 .bl4text {
+		font-size: 23px;			/* 26*0.9 */
+	}
+	#block4 .bl4text span {
+		font-size: 15px;			/* 16*0.9 */
+	}
+	/* *** *****   end section #block4   ***** *** */
+
+/* *** *****   section #block5   ***** *** */
+	#block5 {
+		height: auto;
+	}
+	#block5 h2 {
+		font-size: 32px;			/* 36*0.9 */
+		padding-top: 30px;
+	}
+	#block5 h2 span {
+		font-size: 18px;			/* 20*0.9 */
+		padding-top: 8px;
+	}
+	#block5 form {
+		height: auto;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #fff;
+	}
+	#block5 form p {
+		padding: 20px 1.5% 0;		/* 10px*100%/683px */
+	}
+	#block5 form input[type="text"],
+	#block5 form input[type="tel"] {
+		width: 78%;					/* *~* 403px*100%/683px */
+		max-width: 403px;
+		height: 40px;
+		padding: 0 15px;
+	}
+	#block5 form input[name="name"] {
+		margin-top: 15px;
+	}
+	#block5 form input[name="company"] {
+		margin-bottom: 15px;
+	}
+	#block5 form input[type="submit"] {
+		margin-bottom: 20px;
+	}
+	/* *** *****   end section #block5   ***** *** */
+
+/* *** *****   section #block6   ***** *** */
+	#block6 {
+		height: auto;
+	}
+	#block6 h2 {
+		font-size: 32px;			/* 36*0.9 */
+		padding-top: 40px;
+	}
+	#block6 form input[type="email"],
+	#block6 form input[type="text"] {
+		width: 83%;				/* 641px*100%/768px */
+		height: 45px;
+		padding: 0 15px;
+	}
+	#block6 form input[type="submit"] {
+		margin-bottom: 30px;
+	}
+	/* *** *****   end section #block6   ***** *** */
+}
+/*---    *****     end Mobile     *****    ---*/
+/* ****  end @media (max-width: 767px)  *** */
+
+
+
+/*---    *****     Tablet     *****    ---*/
+@media screen and (min-width: 768px) and (max-width: 899px) {
+/* *** *****   header   ***** *** */
+	header .flot-r {
+		margin-right: 10px;
+	}
+	/* *** *****   end header   ***** *** */
+/* *** *****   section #thenav   ***** *** */
+	/* ***  logo  *** */
+	#thenav .logo {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	#thenav .logo i {
+		font-size: 52px;	/* 57*0.9 */
+		float: none;
+		margin-left: 35px;
+	}
+	#thenav .logo h2 {
+		font-size: 34px;	/* 37*0.9 */
+		float: none;
+	}
+	#thenav .logo h2 span {
+		font-size: 14px;	/* 15*0.9 */
+	}
+	/* ***  end logo  *** */
+	/* ***  nav  *** */
+	#thenav nav {
+		margin-right: 10px;
+	}
+	#thenav .round1,
+	#thenav .round2,
+	#thenav .round3 {
+		margin-right: 12px;
+		margin-left: 12px;
+	}
+	#thenav .last {
+		margin-left: 15px;
+	}
+	/* ***  end nav  *** */
+	/* *** JS style for fixed menu	*** */
+	#thenav.fixed .logo,
+	#thenav.fixedmob .logo {
+		margin-top: 0px;
+	}
+	#thenav.fixed .logo i,
+	#thenav.fixedmob .logo i {
+		font-size: 37px;
+		float: left;
+		margin-left: 2px;
+	}
+	#thenav.fixed .logo h2,
+	#thenav.fixedmob .logo h2 {
+		font-size: 25px;
+		line-height: 0.7;
+		float: left;
+		margin-top: 2px;
+	}
+	#thenav.fixed .logo h2 span,
+	#thenav.fixedmob .logo h2 span {
+		font-size: 13px;
+	}
+	/*	***  end JS style for fixed menu  *** */
+	/* *** *****   end section #thenav   ***** *** */
+
+/* *** *****   section #block1   ***** *** */
+	/* *** *****   end section #block1   ***** *** */
+
+/* *** *****   section #block2   ***** *** */
+	#block2 .column1,
+	#block2 .column2,
+	#block2 .column3 {
+		width: 32%;					/* 224px*100%/768px */
+	}
+	#block2 .column1 {
+		margin-left: 0.39%;			/* 3px*100%/768px */
+		margin-right: 0.91%;		/* 7px*100%/768px */
+		margin-left: 0.39%;
+		margin-right: 0;
+	}
+	#block2 .column3 {
+		margin-left: 0.91%;			/* 7px*100%/768px */
+		margin-right: 0.39%;		/* 8px*100%/768px */
+	}
+	#block2 h3 {
+		font-size: 21px;			/* 22px */
+	}
+	#block2 p {
+		width: 90%;					/* 217px*100%/224px */
+	}
+	/* *** *****   end section #block2   ***** *** */
+
+/* *** *****   section #block3   ***** *** */
+	#block3 .step {
+		background-size: 39.7% auto;	/* 300px*100%/768px */
+	}
+	#block3 .step1 .stnumb,
+	#block3 .step3 .stnumb {
+		left: 25%;					/* ~*100%/768px */
+	}
+	#block3 .step2 .stnumb,
+	#block3 .step4 .stnumb {
+		right: 25%;					/* ~*100%/768px */
+	}
+	/* *** *****   end section #block3   ***** *** */
+
+/* *** *****   section #block4   ***** *** */
+	#block4 .pr,
+	#block4 img {
+		width: 25%;
+		height: auto;
+	}
+	#block4 .pr i {
+		margin-top: 30.08%;			/* 77px*100%/256px */
+	}
+	#block4 .pr-name6 i,
+	#block4 .pr-name8 i {
+		margin-top: 29.3%;			/* 75px*100%/256px */
+		margin-right: 4.69%;		/* 12px*100%/256px */
+	}
+	#block4 .pr .bl4text {
+		margin-top: 7.42%;			/* 19px*100%/256px */
+	}
+	/* *** *****   end section #block4   ***** *** */
+}
+/* ***  end @media (min-width: 768px) and (max-width: 899px)  *** */
+
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+/* *** *****   header   ***** *** */
+	header .flot-r {
+		margin-right: 10px;
+	}
+	/* *** *****   end header   ***** *** */
+/* *** *****   section #thenav   ***** *** */
+	/* ***  logo  *** */
+	#thenav .logo {
+		margin-left: 10px;
+	}
+	/* ***  end logo  *** */
+	/* ***  nav  *** */
+	#thenav nav {
+		margin-right: 10px;
+	}
+	/* ***  end nav  *** */
+	/* *** *****   end section #thenav   ***** *** */
+
+/* *** *****   section #block2   ***** *** */
+	#block2 .column1,
+	#block2 .column2,
+	#block2 .column3 {
+		width: 32%;					/* 224px*100%/768px */
+	}
+	#block2 .column1 {
+		margin-left: 0.39%;			/* 3px*100%/768px */
+		margin-right: 0.91%;		/* 7px*100%/768px */
+	}
+	#block2 .column3 {
+		margin-left: 0.91%;			/* 7px*100%/768px */
+		margin-right: 0.39%;		/* 8px*100%/768px */
+	}
+	#block2 p {
+		max-width: 255px;
+		width: 90%;					/* 217px*100%/224px */
+	}
+	/* *** *****   end section #block2   ***** *** */
+
+/* *** *****   section #block4   ***** *** */
+	#block4 .pr,
+	#block4 img {
+		width: 25%;
+		height: auto;
+	}
+	#block4 .pr i {
+		margin-top: 30.08%;			/* 77px*100%/256px */
+	}
+	#block4 .pr-name6 i,
+	#block4 .pr-name8 i {
+		margin-top: 29.3%;			/* 75px*100%/256px */
+		margin-right: 4.69%;		/* 12px*100%/256px */
+	}
+	#block4 .pr .bl4text {
+		margin-top: 7.42%;			/* 19px*100%/256px */
+	}
+	/* *** *****   end section #block4   ***** *** */
+}
+/*---    *****     end Tablet     *****    ---*/
+/* *** end @media (min-width: 900px) and (max-width: 1100px) *** */
+
+
+/* ***   *****   end @Media Queries Mobile & Tablet   *****   *** */
+
